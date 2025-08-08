@@ -1,44 +1,68 @@
 
+
 import java.util.Scanner;
 
 class Password{
     String phoneNumber;
     String name;
     String password;
-    String confirmPassword;
 
     void acceptDetails(){
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Phone number: ");
+
+        System.out.print("Enter Phone number: ");
         phoneNumber = sc.nextLine();
 
-        System.out.println("Enter Phone number: ");
+        System.out.print("Enter Name: ");
         name = sc.nextLine();
 
-        System.out.println("Enter Phone number: ");
-        password = sc.nextLine();
+        for (int i = 0; i < 3; i++){
 
-        System.out.println("Enter Phone number: ");
-        confirmPassword = sc.nextLine();
+            System.out.print("Enter Password: ");
+            String pass = sc.nextLine();
 
-        if(checkPassword(password, confirmPassword))
-            System.out.println("Password match successfully");
-        else
-            System.out.println("Password not match");
-    }
-    void checkPassword(String password, String confirmPassword){
+            System.out.print("Confirm Password: ");
+            String confirmPass = sc.nextLine();
 
-        do{ 
-            if(password == confirmPassword){
-
+            if(pass.equals(confirmPass)){
+                password = pass;
+                System.out.println("Password set successfully");
+                login();
+                return;
+            } 
+            else{
+                System.out.println("Passwords do not match");
             }
-        } 
+        }
+
+        System.out.println("Failed to set password in 3 attempts.");
+    }
+
+    void login(){
+
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 3; i++){
+            System.out.print("Enter password to login: ");
+            String input = sc.nextLine();
+
+            if(input.equals(password)){
+                System.out.println("Login successful!");
+                return;
+            } 
+            else{
+                System.out.println("Incorrect password");
+            }
+        }
+
+        System.out.println("Login failed after 3 attempts.");
+    }
 }
 
-
-
-
-
-
-
+public class LoginSystem{
+    public static void main(String[] args) {
+        Password p = new Password();
+        p.acceptDetails();
+    }
+}
