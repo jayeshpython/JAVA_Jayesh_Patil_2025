@@ -71,7 +71,7 @@ public class LibraryMain{
                     System.out.print("Enter book id: ");
                     int bId = sc.nextInt();
                     sc.nextLine();
-                    System.out.print("Enter number copies: ");
+                    System.out.print("Enter number of copies: ");
                     int bCopies = sc.nextInt();
                     sc.nextLine();
 
