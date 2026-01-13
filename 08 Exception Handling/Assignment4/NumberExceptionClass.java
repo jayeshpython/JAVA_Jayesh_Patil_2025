@@ -13,7 +13,7 @@ public class NumberExceptionClass{
         
         Scanner sc = new Scanner(System.in);
         try {
-            System.out.println("Enter number: ");
+            System.out.print("Enter number: ");
             int num = sc.nextInt();
 
             if(num < 0){
