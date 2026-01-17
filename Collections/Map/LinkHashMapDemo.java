@@ -7,6 +7,7 @@ class LinkHashMapDemo{
         LinkedHashMap<Integer, String> courseOrder = new LinkedHashMap<>();
         courseOrder.put(1, "HTML");
         courseOrder.put(2, "CSS");
+        courseOrder.put(5, "C++");
         courseOrder.put(3, "JavaScript");
         courseOrder.put(4, "React JS");
 

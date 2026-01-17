@@ -7,9 +7,12 @@ public class HashTableDemo{
         Hashtable<Integer, String> table = new Hashtable<>();
         table.put(1, "OS");
         table.put(2, "CNS");
-        table.put(3, "DBMS");
+        table.put(7, "Java");
+        table.put(5, "DBMS");
 
         System.out.println("Hash Table: " + table);
+        //The output is based on reverse order of keys
+        
         System.out.println("Get 2: " + table.get(2));
         System.out.println("Contains Key 3: " + table.containsKey(3));
         System.out.println("Contains value DBMS ? : " + table.containsValue("DBMS"));

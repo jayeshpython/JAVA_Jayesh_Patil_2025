@@ -38,7 +38,7 @@ public class VectorDemo{
         System.out.println("Last: " + students.lastElement());
         System.out.println("At index 2: " + students.get(2));
 
-        //set
+        //set(replace)
         students.set(2, new Student("Samruddhi", 72));
         System.out.println("After set at index 2: "+ students);
 
