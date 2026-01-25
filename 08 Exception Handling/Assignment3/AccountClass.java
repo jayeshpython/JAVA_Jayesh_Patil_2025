@@ -30,14 +30,14 @@ class BankAccount{
 public class AccountClass{
     public static void main(String[] args) {
         
-        BankAccount b1 = new BankAccount("Karan", 10000);
+        BankAccount b1 = new BankAccount("Karan", 4000);
        
         try {
             b1.withdraw(5000);
             System.out.println("Transaction successful");
             System.out.println("Remaining balance: " + b1.getBalance());
         } catch (IllegalArgumentException e) {
-            System.out.println("Insufficient balance ! Transaction failed!");
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }

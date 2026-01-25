@@ -13,7 +13,7 @@ import java.util.*;
 
 public class MethodExample{
 
-    static double divide(double num, double den){
+    static double divide(double num, double den)throws ArithmeticException{
         if(den == 0){
             throw new ArithmeticException();
         }

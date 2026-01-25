@@ -44,7 +44,7 @@ public class IntegerClass{
 		System.out.println("Array list after removing element at index 4: " + list);
 
 		//5) Remove element by value: Remove the value 10 from the list.
-		list.remove(Integer.valueOf(10));
+		list.remove(Integer.valueOf(10));   //Converts primitive data tyhpe int to Integer
 		System.out.println("Array list after removing value 10: " + list);
 		
 		//6) Check element: check if the number 50 exist in the list.
