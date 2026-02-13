@@ -1,5 +1,4 @@
-
-package com.college.bean;
+package Bean;
 
 public class AdminInformation {
     private String adminName;

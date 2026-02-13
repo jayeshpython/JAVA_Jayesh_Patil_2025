@@ -1,7 +1,7 @@
-
-package com.college.bean;
+package Bean;
 
 public class Branch {
+    private String branchName;
     private final double lastYearCutOff;
     private double thisYearCutOff;
     private int availableSeats;
@@ -11,17 +11,25 @@ public class Branch {
         this.thisYearCutOff = thisYearCutOff;
         this.availableSeats = availableSeats;
     }
-
+    
     public double getLastYearCutOff() {
         return lastYearCutOff;
     }
 
-    public double getThisYearCutOff() {
+    public double getThisYearCutOff(){
         return thisYearCutOff;
     }
 
     public void setThisYearCutOff(double thisYearCutOff) {
         this.thisYearCutOff = thisYearCutOff;
+    }
+
+    public void setBranchName(String branchName){
+        this.branchName=branchName;
+    }
+
+    public String getBranchName(){
+        return branchName;
     }
 
     public int getAvailableSeats() {
@@ -34,9 +42,8 @@ public class Branch {
 
     @Override
     public String toString() {
-    return "Branch [lastYearCutOff=" + lastYearCutOff +
-           ", thisYearCutOff=" + thisYearCutOff +
-           ", availableSeats=" + availableSeats + "]";
+    return "    [lastYearCutOff=" + lastYearCutOff +
+           ",   availableSeats=" + availableSeats + " ] ";
     }
 
 }

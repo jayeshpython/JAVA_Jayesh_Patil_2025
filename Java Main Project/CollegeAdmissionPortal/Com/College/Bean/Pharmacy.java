@@ -1,7 +1,5 @@
-
-package com.college.bean;
-import java.util.HashMap;
-import java.util.Map;
+package Bean;
+import java.util.*;
 
 public class Pharmacy extends College{
     private HashMap<String, Branch> branchWiseCutOffsForPharmacy = new HashMap<>();
@@ -21,13 +19,26 @@ public class Pharmacy extends College{
         return branchWiseCutOffsForPharmacy;
     }
 
-    //display all medical branches
-    public void displayAllBranches() {
-        System.out.println("Displaying medical branches in " + getCollegeName());
-        for (Map.Entry<String, Branch> entry : branchWiseCutOffsForPharmacy.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
-        }
+    public Branch getBranch(String branchName){
+        return branchWiseCutOffsForPharmacy.get(branchName);
     }
+
+    //display all medical branches
+   public void displayAllBranches() {
+        System.out.println("\nBranches in " + getCollegeName() + ":");
+
+        if (branchWiseCutOffsForPharmacy.isEmpty()) {
+            System.out.println("No branches available");
+            return;
+        }
+
+        for (Map.Entry<String, Branch> entry : branchWiseCutOffsForPharmacy.entrySet()) {
+            System.out.println("Branch: " + entry.getKey());
+            System.out.println("Details: " + entry.getValue());
+            System.out.println("----------------------");
+        }
+}
+
 
     @Override
     public String toString() {

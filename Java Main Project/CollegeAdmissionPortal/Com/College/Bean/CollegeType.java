@@ -1,7 +1,7 @@
-
-package com.college.bean;
+package Bean;
 
 public enum CollegeType {
+
     IIT,
     NIT,
     IISER,
@@ -9,5 +9,21 @@ public enum CollegeType {
     AIIMS,
     OtherEngineering,
     OtherMedical,
-    OtherPharmacy
+    OtherPharmacy;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
