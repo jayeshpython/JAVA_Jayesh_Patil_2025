@@ -27,87 +27,96 @@ public class CollegesDataBase{
         //map.put(1001, iitB);
         //iitB.addBranchDetails("Mechanical", new Branch(99,89,15));
         
-            // ================= IITs =================
+        // ================= IITs (Marks Based Cutoff) =================
+
+        // IIT Bombay
         Engineering iitB = new Engineering("IIT Bombay","info@iitb.ac.in","02225722545","Mumbai",CollegeType.IIT);
-        iitB.addBranchDetails("CSE Engineering", new Branch(99.67, 99.72,120));
-        iitB.addBranchDetails("Electrical Engineering", new Branch(99.32, 99.38,100));
-        iitB.addBranchDetails("Mechanical Engineering", new Branch(99.40, 99.33,150));
-        iitB.addBranchDetails("Electonics Engineering", new Branch(99.51, 99.57, 90));
-        iitB.addBranchDetails("Civil Engineering", new Branch(98.78, 98.60, 60));
-        iitB.addBranchDetails("Aerospace Engineering", new Branch(99.78, 99.82, 180));
+        iitB.addBranchDetails("CSE Engineering", new Branch(280, 300,120));
+        iitB.addBranchDetails("Electrical Engineering", new Branch(250, 265,100));
+        iitB.addBranchDetails("Mechanical Engineering", new Branch(220, 240,150));
+        iitB.addBranchDetails("Civil Engineering", new Branch(160, 180,60));
+        iitB.addBranchDetails("Aerospace Engineering", new Branch(200, 220,120));
         map.put(1001, iitB);
 
+
+        // IIT Delhi
         Engineering iitD = new Engineering("IIT Delhi","info@iitd.ac.in","01126591735","Delhi",CollegeType.IIT);
-        iitD.addBranchDetails("CSE Engineering", new Branch(99.64, 99.70,110));
-        iitD.addBranchDetails("Electrical Engineering", new Branch(99.22, 99.31,120));
-        iitD.addBranchDetails("Mechanical Engineering", new Branch(99.30, 99.34,150));
-        iitD.addBranchDetails("Electronics Engineering", new Branch(99.412, 99.483, 180));
-        iitD.addBranchDetails("Civil Engineering", new Branch(98.50, 98.42, 240));
+        iitD.addBranchDetails("CSE Engineering", new Branch(270, 285,110));
+        iitD.addBranchDetails("Electrical Engineering", new Branch(245, 260,120));
+        iitD.addBranchDetails("Mechanical Engineering", new Branch(215, 235,150));
+        iitD.addBranchDetails("Civil Engineering", new Branch(155, 175,200));
         map.put(1002, iitD);
 
+
+        // IIT Madras
         Engineering iitM = new Engineering("IIT Madras","info@iitm.ac.in","04422578000","Chennai",CollegeType.IIT);
-        iitM.addBranchDetails("CSE Engineering", new Branch(99.70, 99.75,120));
-        iitM.addBranchDetails("Electrical Engineering", new Branch(99.34, 99.39, 180));
-        iitM.addBranchDetails("Mechanical Enginerring", new Branch(99.23, 99.26,150));
-        iitM.addBranchDetails("Electonics Engineering", new Branch(99.53, 99.62, 60));
-        iitM.addBranchDetails("Civil Engineering", new Branch(98.12, 98.04, 180));
+        iitM.addBranchDetails("CSE Engineering", new Branch(275, 290,120));
+        iitM.addBranchDetails("Electrical Engineering", new Branch(250, 265,150));
+        iitM.addBranchDetails("Mechanical Engineering", new Branch(220, 235,150));
+        iitM.addBranchDetails("Civil Engineering", new Branch(150, 170,180));
         map.put(1003, iitM);
 
+
+        // IIT Kanpur
         Engineering iitK = new Engineering("IIT Kanpur","info@iitk.ac.in","05122597777","Kanpur",CollegeType.IIT);
-        iitK.addBranchDetails("CSE Engineering", new Branch(99.62, 99.69,110));
-        iitK.addBranchDetails("Electrical Engineering", new Branch(99.34, 99.35,120));
-        iitK.addBranchDetails("Mechanical Engineering", new Branch(99.23, 99.25,150));
-        iitK.addBranchDetails("Electonics Engineering", new Branch(99.51, 99.59, 60));
-        iitK.addBranchDetails("Civil Engineering", new Branch(98.12, 98.04, 180));
+        iitK.addBranchDetails("CSE Engineering", new Branch(260, 275,110));
+        iitK.addBranchDetails("Electrical Engineering", new Branch(240, 255,120));
+        iitK.addBranchDetails("Mechanical Engineering", new Branch(210, 230,150));
+        iitK.addBranchDetails("Civil Engineering", new Branch(145, 165,180));
         map.put(1004, iitK);
 
+
+        // IIT Kharagpur
         Engineering iitKgp = new Engineering("IIT Kharagpur","info@iitkgp.ac.in","03222255000","Kharagpur",CollegeType.IIT);
-        iitKgp.addBranchDetails("CSE Engineering", new Branch(99.55, 99.61,120));
-        iitKgp.addBranchDetails("Electrical Engineering", new Branch(99.34, 99.37,120));
-        iitKgp.addBranchDetails("Mechanical Engineering", new Branch(98.97, 98.99,150));
-        iitKgp.addBranchDetails("Electonics Engineering", new Branch(99.48, 99.52, 60));
-        iitKgp.addBranchDetails("Civil Engineering", new Branch(98.03, 98.04, 180));
-        iitKgp.addBranchDetails("Mining Engineering", new Branch(97.89, 97.66, 80));
+        iitKgp.addBranchDetails("CSE Engineering", new Branch(245, 260,120));
+        iitKgp.addBranchDetails("Electrical Engineering", new Branch(230, 245,120));
+        iitKgp.addBranchDetails("Mechanical Engineering", new Branch(200, 220,150));
+        iitKgp.addBranchDetails("Civil Engineering", new Branch(140, 160,180));
         map.put(1005, iitKgp);
 
+
+        // IIT Roorkee
         Engineering iitR = new Engineering("IIT Roorkee","info@iitr.ac.in","01332285000","Roorkee",CollegeType.IIT);
-        iitR.addBranchDetails("CSE Engineering", new Branch(99.62, 99.75,120));
-        iitR.addBranchDetails("Electrical Engineering", new Branch(99.21, 99.25,140));
-        iitR.addBranchDetails("Mechanical Engineering", new Branch(99.14, 99.19,150));
-        iitR.addBranchDetails("Electonics Engineering", new Branch(99.42, 99.51, 180));
-        iitR.addBranchDetails("Civil Engineering", new Branch(98.06, 98.04, 210));
+        iitR.addBranchDetails("CSE Engineering", new Branch(240, 255,120));
+        iitR.addBranchDetails("Electrical Engineering", new Branch(225, 240,140));
+        iitR.addBranchDetails("Mechanical Engineering", new Branch(195, 215,150));
+        iitR.addBranchDetails("Civil Engineering", new Branch(135, 155,210));
         map.put(1006, iitR);
 
+
+        // IIT Guwahati
         Engineering iitG = new Engineering("IIT Guwahati","info@iitg.ac.in","03612582200","Guwahati",CollegeType.IIT);
-        iitG.addBranchDetails("CSE Engineering", new Branch(99.44, 99.55,120));
-        iitG.addBranchDetails("Electrical Engineering", new Branch(99.21, 99.29,120));
-        iitG.addBranchDetails("Mechanical Engineering", new Branch(99.09, 99.15,150));
-        iitG.addBranchDetails("Electonics Engineering", new Branch(99.39, 99.47, 60));
-        iitG.addBranchDetails("Civil Engineering", new Branch(98.12, 98.04, 180));
+        iitG.addBranchDetails("CSE Engineering", new Branch(235, 250,120));
+        iitG.addBranchDetails("Electrical Engineering", new Branch(220, 235,120));
+        iitG.addBranchDetails("Mechanical Engineering", new Branch(190, 210,150));
+        iitG.addBranchDetails("Civil Engineering", new Branch(130, 150,180));
         map.put(1007, iitG);
 
+
+        // IIT Hyderabad
         Engineering iitH = new Engineering("IIT Hyderabad","info@iith.ac.in","04023016000","Hyderabad",CollegeType.IIT);
-        iitH.addBranchDetails("CSE", new Branch(99.53, 99.56,120));
-        iitH.addBranchDetails("Electrical", new Branch(199.12, 99.20,120));
-        iitH.addBranchDetails("Mechanical", new Branch(99.12, 99.15,150));
-        iitH.addBranchDetails("Electonics Engineering", new Branch(99.35, 99.42, 60));
-        iitH.addBranchDetails("Civil Engineering", new Branch(98.11, 98.04, 180));
+        iitH.addBranchDetails("CSE Engineering", new Branch(230, 245,120));
+        iitH.addBranchDetails("Electrical Engineering", new Branch(215, 230,120));
+        iitH.addBranchDetails("Mechanical Engineering", new Branch(185, 205,150));
+        iitH.addBranchDetails("Civil Engineering", new Branch(125, 145,180));
         map.put(1008, iitH);
 
+
+        // IIT BHU
         Engineering iitBHU = new Engineering("IIT BHU","info@iitbhu.ac.in","05422367100","Varanasi",CollegeType.IIT);
-        iitBHU.addBranchDetails("CSE Engineering", new Branch(98.72, 98.75,110));
-        iitBHU.addBranchDetails("Electrical Engineering", new Branch(98.56, 98.62,120));
-        iitBHU.addBranchDetails("Mechanical Engineering", new Branch(98.26, 98.21, 150));
-        iitBHU.addBranchDetails("Electonics Engineering", new Branch(98.53, 99.62, 60));
-        iitBHU.addBranchDetails("Civil Engineering", new Branch(96.12, 96.04, 180));
+        iitBHU.addBranchDetails("CSE Engineering", new Branch(210, 225,110));
+        iitBHU.addBranchDetails("Electrical Engineering", new Branch(195, 210,120));
+        iitBHU.addBranchDetails("Mechanical Engineering", new Branch(175, 195,150));
+        iitBHU.addBranchDetails("Civil Engineering", new Branch(120, 140,180));
         map.put(1009, iitBHU);
 
+
+        // IIT Indore
         Engineering iitI = new Engineering("IIT Indore","info@iiti.ac.in","07312431000","Indore",CollegeType.IIT);
-        iitI.addBranchDetails("CSE Engineering", new Branch(99.22, 99.26,110));
-        iitI.addBranchDetails("Electrical Engineering", new Branch(99.03, 99.09,120));
-        iitI.addBranchDetails("Mechanical Engineering", new Branch(98.92, 98.88,150));
-        iitM.addBranchDetails("Electonics Engineering", new Branch(99.13, 99.22, 60));
-        iitM.addBranchDetails("Civil Engineering", new Branch(98.12, 98.04, 180));
+        iitI.addBranchDetails("CSE Engineering", new Branch(205, 220,110));
+        iitI.addBranchDetails("Electrical Engineering", new Branch(190, 205,120));
+        iitI.addBranchDetails("Mechanical Engineering", new Branch(170, 190,150));
+        iitI.addBranchDetails("Civil Engineering", new Branch(115, 135,180));
         map.put(1010, iitI);
 
         // ================= NITs =================
@@ -192,108 +201,128 @@ public class CollegesDataBase{
         nitSi.addBranchDetails("Civil Engineering", new Branch(95.10, 95.30,180));
         map.put(2010, nitSi);
 
-                // ================= IISER Pune =================
-        Engineering iiserP = new Engineering(
-                "IISER Pune","info@iiserpune.ac.in","02025908000","Pune",CollegeType.IISER
-        );
-        iiserP.addBranchDetails("Physics", new Branch(98.50, 98.60,60));
-        iiserP.addBranchDetails("Chemistry", new Branch(98.20, 98.30,60));
-        iiserP.addBranchDetails("Biology", new Branch(97.80, 97.90,60));
-        iiserP.addBranchDetails("Mathematics", new Branch(98.40, 98.50,60));
-        iiserP.addBranchDetails("Earth & Environmental Science", new Branch(97.20, 97.30,40));
-        map.put(8001, iiserP);
-
         // ================= IISER Kolkata =================
         Engineering iiserK = new Engineering(
                 "IISER Kolkata","info@iiserkol.ac.in","03366340000","Kolkata",CollegeType.IISER
         );
-        iiserK.addBranchDetails("Physics", new Branch(98.30, 98.40,60));
-        iiserK.addBranchDetails("Chemistry", new Branch(98.00, 98.10,60));
-        iiserK.addBranchDetails("Biology", new Branch(97.60, 97.70,60));
-        iiserK.addBranchDetails("Mathematics", new Branch(98.10, 98.20,60));
-        iiserK.addBranchDetails("Earth & Environmental Science", new Branch(97.00, 97.10,40));
+        iiserK.addBranchDetails("Physics", new Branch(180, 200,60));
+        iiserK.addBranchDetails("Chemistry", new Branch(170, 185,60));
+        iiserK.addBranchDetails("Biology", new Branch(165, 175,60));
+        iiserK.addBranchDetails("Mathematics", new Branch(175, 190,60));
+        iiserK.addBranchDetails("Earth & Environmental Science", new Branch(160, 170,40));
         map.put(8002, iiserK);
+
 
         // ================= IISER Mohali =================
         Engineering iiserM = new Engineering(
                 "IISER Mohali","info@iisermohali.ac.in","01725036000","Mohali",CollegeType.IISER
         );
-        iiserM.addBranchDetails("Physics", new Branch(97.80, 97.90,60));
-        iiserM.addBranchDetails("Chemistry", new Branch(97.50, 97.60,60));
-        iiserM.addBranchDetails("Biology", new Branch(97.10, 97.20,60));
-        iiserM.addBranchDetails("Mathematics", new Branch(97.60, 97.70,60));
-        iiserM.addBranchDetails("Earth & Environmental Science", new Branch(96.80, 96.90,40));
+        iiserM.addBranchDetails("Physics", new Branch(165, 180,60));
+        iiserM.addBranchDetails("Chemistry", new Branch(155, 170,60));
+        iiserM.addBranchDetails("Biology", new Branch(150, 160,60));
+        iiserM.addBranchDetails("Mathematics", new Branch(160, 175,60));
+        iiserM.addBranchDetails("Earth & Environmental Science", new Branch(145, 155,40));
         map.put(8003, iiserM);
 
-        // ================= IISER Bhopal (SPECIAL CASE) =================
+
+        // ================= IISER Bhopal =================
         Engineering iiserB = new Engineering(
                 "IISER Bhopal","info@iiserb.ac.in","07552691000","Bhopal",CollegeType.IISER
         );
-        iiserB.addBranchDetails("Physics", new Branch(97.70, 97.80,60));
-        iiserB.addBranchDetails("Chemistry", new Branch(97.40, 97.50,60));
-        iiserB.addBranchDetails("Biology", new Branch(97.00, 97.10,60));
-        iiserB.addBranchDetails("Mathematics", new Branch(97.60, 97.70,60));
-        iiserB.addBranchDetails("Earth & Environmental Science", new Branch(96.80, 96.90,40));
+        iiserB.addBranchDetails("Physics", new Branch(160, 175,60));
+        iiserB.addBranchDetails("Chemistry", new Branch(150, 165,60));
+        iiserB.addBranchDetails("Biology", new Branch(145, 155,60));
+        iiserB.addBranchDetails("Mathematics", new Branch(155, 170,60));
+        iiserB.addBranchDetails("Earth & Environmental Science", new Branch(140, 150,40));
 
-        // 🔹 Unique IISER Bhopal branches
-        iiserB.addBranchDetails("Economic Sciences", new Branch(98.00, 98.10,40));
-        iiserB.addBranchDetails("EECS (Electrical & Computer Sciences)", new Branch(98.40, 98.50,60));
-        iiserB.addBranchDetails("Data Science Engineering", new Branch(98.60, 98.70,60));
+        // 🔹 Special branches
+        iiserB.addBranchDetails("Economic Sciences", new Branch(175, 190,40));
+        iiserB.addBranchDetails("EECS (Electrical & Computer Sciences)", new Branch(185, 200,60));
+        iiserB.addBranchDetails("Data Science Engineering", new Branch(190, 210,60));
         map.put(8004, iiserB);
+
 
         // ================= IISER Thiruvananthapuram =================
         Engineering iiserTvm = new Engineering(
                 "IISER Thiruvananthapuram","info@iisertvm.ac.in","04712770300",
                 "Thiruvananthapuram",CollegeType.IISER
         );
-        iiserTvm.addBranchDetails("Physics", new Branch(97.60, 97.70,60));
-        iiserTvm.addBranchDetails("Chemistry", new Branch(97.30, 97.40,60));
-        iiserTvm.addBranchDetails("Biology", new Branch(96.90, 97.00,60));
-        iiserTvm.addBranchDetails("Mathematics", new Branch(97.40, 97.50,60));
-        iiserTvm.addBranchDetails("Earth & Environmental Science", new Branch(96.60, 96.70,40));
+        iiserTvm.addBranchDetails("Physics", new Branch(155, 170,60));
+        iiserTvm.addBranchDetails("Chemistry", new Branch(145, 160,60));
+        iiserTvm.addBranchDetails("Biology", new Branch(140, 150,60));
+        iiserTvm.addBranchDetails("Mathematics", new Branch(150, 165,60));
+        iiserTvm.addBranchDetails("Earth & Environmental Science", new Branch(135, 145,40));
         map.put(8005, iiserTvm);
+
 
         // ================= IISER Tirupati =================
         Engineering iiserT = new Engineering(
                 "IISER Tirupati","info@iisertirupati.ac.in","08772210000",
                 "Tirupati",CollegeType.IISER
         );
-        iiserT.addBranchDetails("Physics", new Branch(97.20, 97.30,60));
-        iiserT.addBranchDetails("Chemistry", new Branch(96.90, 97.00,60));
-        iiserT.addBranchDetails("Biology", new Branch(96.50, 96.60,60));
-        iiserT.addBranchDetails("Mathematics", new Branch(97.00, 97.10,60));
-        iiserT.addBranchDetails("Earth & Environmental Science", new Branch(96.20, 96.30,40));
+        iiserT.addBranchDetails("Physics", new Branch(140, 155,60));
+        iiserT.addBranchDetails("Chemistry", new Branch(130, 145,60));
+        iiserT.addBranchDetails("Biology", new Branch(125, 135,60));
+        iiserT.addBranchDetails("Mathematics", new Branch(135, 150,60));
+        iiserT.addBranchDetails("Earth & Environmental Science", new Branch(120, 130,40));
         map.put(8006, iiserT);
+
 
         // ================= IISER Berhampur =================
         Engineering iiserBr = new Engineering(
                 "IISER Berhampur","info@iiserbpr.ac.in","06802300000",
                 "Berhampur",CollegeType.IISER
         );
-        iiserBr.addBranchDetails("Physics", new Branch(96.80, 96.90,60));
-        iiserBr.addBranchDetails("Chemistry", new Branch(96.50, 96.60,60));
-        iiserBr.addBranchDetails("Biology", new Branch(96.10, 96.20,60));
-        iiserBr.addBranchDetails("Mathematics", new Branch(96.60, 96.70,60));
-        iiserBr.addBranchDetails("Earth & Environmental Science", new Branch(95.80, 95.90,40));
+        iiserBr.addBranchDetails("Physics", new Branch(125, 140,60));
+        iiserBr.addBranchDetails("Chemistry", new Branch(120, 135,60));
+        iiserBr.addBranchDetails("Biology", new Branch(115, 125,60));
+        iiserBr.addBranchDetails("Mathematics", new Branch(120, 135,60));
+        iiserBr.addBranchDetails("Earth & Environmental Science", new Branch(110, 120,40));
         map.put(8007, iiserBr);
 
-                // ================= BITS =================
-        Engineering bitsP = new Engineering("BITS Pilani","info@pilani.bits-pilani.ac.in","01596242000","Rajasthan",CollegeType.BITS);
-        bitsP.addBranchDetails("CSE", new Branch(98.50,98.60,150));
-        bitsP.addBranchDetails("Electrical", new Branch(97.90,98.00,150));
-        bitsP.addBranchDetails("Mechanical", new Branch(97.10,97.20,180));
+        
+        // ================= BITS Pilani =================
+        Engineering bitsP = new Engineering("BITS Pilani","info@pilani.bits-pilani.ac.in","01596242000","Pilani",CollegeType.BITS);
+
+        bitsP.addBranchDetails("Computer Science Engineering", new Branch(330, 345,150));
+        bitsP.addBranchDetails("Electronics and Communication Engineering", new Branch(315, 330,120));
+        bitsP.addBranchDetails("Electrical and Electronics Engineering", new Branch(305, 320,150));
+        bitsP.addBranchDetails("Electronics and Instrumentation Engineering", new Branch(300, 315,120));
+
+        bitsP.addBranchDetails("Mechanical Engineering", new Branch(260, 280,180));
+        bitsP.addBranchDetails("Chemical Engineering", new Branch(250, 270,120));
+        bitsP.addBranchDetails("Civil Engineering", new Branch(235, 255,120));
+        bitsP.addBranchDetails("Manufacturing Engineering", new Branch(225, 240,100));
+
         map.put(3001, bitsP);
 
+
+        // ================= BITS Goa =================
         Engineering bitsG = new Engineering("BITS Goa","info@goa.bits-pilani.ac.in","08322580000","Goa",CollegeType.BITS);
-        bitsG.addBranchDetails("CSE", new Branch(97.80,97.90,120));
-        bitsG.addBranchDetails("Electrical", new Branch(97.10,97.20,120));
-        bitsG.addBranchDetails("Mechanical", new Branch(96.40,96.50,150));
+
+        bitsG.addBranchDetails("Computer Science Engineering", new Branch(300, 315,120));
+        bitsG.addBranchDetails("Electronics and Communication Engineering", new Branch(290, 305,120));
+        bitsG.addBranchDetails("Electrical and Electronics Engineering", new Branch(280, 295,120));
+        bitsG.addBranchDetails("Electronics and Instrumentation Engineering", new Branch(275, 290,120));
+
+        bitsG.addBranchDetails("Mechanical Engineering", new Branch(240, 255,150));
+        bitsG.addBranchDetails("Chemical Engineering", new Branch(235, 250,120));
+
         map.put(3002, bitsG);
 
+
+        // ================= BITS Hyderabad =================
         Engineering bitsH = new Engineering("BITS Hyderabad","info@hyderabad.bits-pilani.ac.in","04066303833","Hyderabad",CollegeType.BITS);
-        bitsH.addBranchDetails("CSE", new Branch(97.50,97.60,120));
-        bitsH.addBranchDetails("Electrical", new Branch(96.80,96.90,120));
-        bitsH.addBranchDetails("Mechanical", new Branch(96.10,96.20,150));
+
+        bitsH.addBranchDetails("Computer Science Engineering", new Branch(285, 300,120));
+        bitsH.addBranchDetails("Electronics and Communication Engineering", new Branch(275, 290,120));
+        bitsH.addBranchDetails("Electrical and Electronics Engineering", new Branch(265, 280,120));
+        bitsH.addBranchDetails("Electronics and Instrumentation Engineering", new Branch(260, 275,120));
+
+        bitsH.addBranchDetails("Mechanical Engineering", new Branch(225, 240,150));
+        bitsH.addBranchDetails("Chemical Engineering", new Branch(220, 235,120));
+        bitsH.addBranchDetails("Civil Engineering", new Branch(210, 225,120));
+
         map.put(3003, bitsH);
 
                 // ================= COEP Pune =================
@@ -541,38 +570,242 @@ public class CollegesDataBase{
 
         HashMap<Integer, Medical> map = new HashMap<>();
 
-        map.put(301, new Medical("BJ Medical College", "9000000001", "MBBS", "Pune", CollegeType.OtherMedical));
-        map.put(302, new Medical("Grant Medical College", "9000000002", "MBBS", "Mumbai",CollegeType.OtherMedical));
-        map.put(303, new Medical("AFMC", "9000000003", "MBBS", "Pune",CollegeType.OtherMedical));
-        map.put(304, new Medical("KEM Hospital", "9000000004", "MBBS", "Mumbai", CollegeType.OtherMedical));
-        map.put(305, new Medical("JJ Medical College", "9000000005", "MBBS", "Mumbai", CollegeType.OtherMedical));
-        map.put(306, new Medical("LTMMC", "9000000006", "MBBS", "Mumbai", CollegeType.OtherMedical));
-        map.put(307, new Medical("GMC Nagpur", "9000000007", "MBBS", "Nagpur", CollegeType.OtherMedical));
-        map.put(308, new Medical("DY Patil Medical", "9000000008", "MBBS", "Pune", CollegeType.OtherMedical));
-        map.put(309, new Medical("NKP Salve", "9000000009", "MBBS", "Nagpur", CollegeType.OtherMedical));
-        map.put(310, new Medical("Seth GS Medical", "9000000010", "MBBS", "Mumbai", CollegeType.OtherMedical));
+        // ========= OTHER TOP MEDICAL COLLEGES =========
 
-        map.put(311, new Medical("AIIMS New Delhi", "9000000011", "MBBS", "New Delhi", CollegeType.AIIMS));
-        map.put(312, new Medical("AIIMS Bangalore", "9000000012", "MBBS", "Bangalore", CollegeType.AIIMS));
-        map.put(313, new Medical("AIIMS Bhopal", "9000000013", "MBBS", "Bhopal", CollegeType.AIIMS));
-        map.put(314, new Medical("AIIMS Bhubaneswar", "9000000014", "MBBS", "Bhubaneswar", CollegeType.AIIMS));
-        map.put(315, new Medical("AIIMS Jodhpur", "9000000015", "MBBS", "Jodhpur", CollegeType.AIIMS));
-        map.put(316, new Medical("AIIMS Raipur", "9000000016", "MBBS", "Raipur", CollegeType.AIIMS));
-        map.put(317, new Medical("AIIMS Rishikesh", "9000000017", "MBBS", "Rishikesh", CollegeType.AIIMS));
+        // 301 BJ Medical College - Pune
+        Medical bj = new Medical("BJ Medical College", "9000000001", "MBBS", "Pune", CollegeType.OtherMedical);
+        bj.addBranch("MBBS", new Branch(650, 665, 200));
+        bj.addBranch("BAMS", new Branch(450, 470, 100));
+        bj.addBranch("BHMS", new Branch(400, 420, 100));
+        map.put(301, bj);
 
-        map.put(318, new Medical("Christian Medical College Vellore", "9000000018", "MBBS", "Vellore", CollegeType.OtherMedical));
-        map.put(319, new Medical("King George's Medical University", "9000000019", "MBBS", "Lucknow", CollegeType.OtherMedical));
-        map.put(320, new Medical("Banaras Hindu University – Institute of Medical Sciences", "9000000020", "MBBS", "Varanasi", CollegeType.OtherMedical));
-        map.put(321, new Medical("Maulana Azad Medical College", "9000000021", "MBBS", "New Delhi", CollegeType.OtherMedical));
-        map.put(322, new Medical("Lady Hardinge Medical College", "9000000022", "MBBS", "New Delhi", CollegeType.OtherMedical));
-        map.put(323, new Medical("Armed Forces Medical College (AFMC) Pune", "9000000023", "MBBS", "Pune", CollegeType.OtherMedical));
-        map.put(324, new Medical("St. John's Medical College", "9000000024", "MBBS", "Bangalore", CollegeType.OtherMedical));
-        map.put(325, new Medical("Grant Medical College & Sir J.J. Group of Hospitals", "9000000025", "MBBS", "Mumbai", CollegeType.OtherMedical));
-        map.put(326, new Medical("Amrita School of Medicine, Kochi", "9000000026", "MBBS", "Kochi", CollegeType.OtherMedical));
-        map.put(327, new Medical("Manipal College of Medical Sciences", "9000000027", "MBBS", "Manipal", CollegeType.OtherMedical));
-        map.put(328, new Medical("JIPMER Puducherry", "9000000028", "MBBS", "Puducherry", CollegeType.OtherMedical));
-        map.put(329, new Medical("King George's Medical University – Gorakhpur Campus", "9000000029", "MBBS", "Gorakhpur", CollegeType.OtherMedical));
-        map.put(330, new Medical("Institute of Medical Sciences, Banaras Hindu University", "9000000030", "MBBS", "Varanasi", CollegeType.OtherMedical));
+        // 302 Grant Medical College - Mumbai
+        Medical grant = new Medical("Grant Medical College", "9000000002", "MBBS", "Mumbai", CollegeType.OtherMedical);
+        grant.addBranch("MBBS", new Branch(645, 660, 180));
+        grant.addBranch("BAMS", new Branch(445, 465, 90));
+        grant.addBranch("BHMS", new Branch(395, 415, 90));
+        map.put(302, grant);
+
+        // 303 AFMC - Pune
+        Medical afmc = new Medical("AFMC", "9000000003", "MBBS", "Pune", CollegeType.OtherMedical);
+        afmc.addBranch("MBBS", new Branch(660, 675, 150));
+        afmc.addBranch("BAMS", new Branch(460, 480, 80));
+        afmc.addBranch("BHMS", new Branch(410, 430, 80));
+        map.put(303, afmc);
+
+        // 304 KEM Hospital - Mumbai
+        Medical kem = new Medical("KEM Hospital", "9000000004", "MBBS", "Mumbai", CollegeType.OtherMedical);
+        kem.addBranch("MBBS", new Branch(648, 662, 180));
+        kem.addBranch("BAMS", new Branch(448, 468, 90));
+        kem.addBranch("BHMS", new Branch(398, 418, 90));
+        map.put(304, kem);
+
+        // 305 JJ Medical College - Mumbai
+        Medical jj = new Medical("JJ Medical College", "9000000005", "MBBS", "Mumbai", CollegeType.OtherMedical);
+        jj.addBranch("MBBS", new Branch(640, 655, 170));
+        jj.addBranch("BAMS", new Branch(440, 460, 90));
+        jj.addBranch("BHMS", new Branch(390, 410, 90));
+        map.put(305, jj);
+
+        // 306 LTMMC - Mumbai
+        Medical ltm = new Medical("LTMMC", "9000000006", "MBBS", "Mumbai", CollegeType.OtherMedical);
+        ltm.addBranch("MBBS", new Branch(635, 650, 150));
+        ltm.addBranch("BAMS", new Branch(435, 455, 85));
+        ltm.addBranch("BHMS", new Branch(385, 405, 85));
+        map.put(306, ltm);
+
+        // 307 GMC Nagpur
+        Medical gmcNag = new Medical("GMC Nagpur", "9000000007", "MBBS", "Nagpur", CollegeType.OtherMedical);
+        gmcNag.addBranch("MBBS", new Branch(630, 645, 150));
+        gmcNag.addBranch("BAMS", new Branch(430, 450, 80));
+        gmcNag.addBranch("BHMS", new Branch(380, 400, 80));
+        map.put(307, gmcNag);
+
+        // 308 DY Patil Medical - Pune
+        Medical dyp = new Medical("DY Patil Medical", "9000000008", "MBBS", "Pune", CollegeType.OtherMedical);
+        dyp.addBranch("MBBS", new Branch(600, 630, 250));
+        dyp.addBranch("BAMS", new Branch(420, 440, 100));
+        dyp.addBranch("BHMS", new Branch(370, 390, 100));
+        map.put(308, dyp);
+
+        // 309 NKP Salve - Nagpur
+        Medical nkp = new Medical("NKP Salve", "9000000009", "MBBS", "Nagpur", CollegeType.OtherMedical);
+        nkp.addBranch("MBBS", new Branch(590, 620, 200));
+        nkp.addBranch("BAMS", new Branch(410, 430, 100));
+        nkp.addBranch("BHMS", new Branch(360, 380, 100));
+        map.put(309, nkp);
+
+        // 310 Seth GS Medical College - Mumbai
+        Medical gs = new Medical("Seth GS Medical", "9000000010", "MBBS", "Mumbai", CollegeType.OtherMedical);
+        gs.addBranch("MBBS", new Branch(645, 660, 180));
+        gs.addBranch("BAMS", new Branch(445, 465, 90));
+        gs.addBranch("BHMS", new Branch(395, 415, 90));
+        map.put(310, gs);
+
+        // =========  AIIMS COLLEGES =========
+
+        // AIIMS New Delhi
+        Medical delhi = new Medical("AIIMS New Delhi", "9000000011", "MBBS", "New Delhi", CollegeType.AIIMS);
+        delhi.addBranch("MBBS", new Branch(700, 705, 132));
+        delhi.addBranch("BAMS", new Branch(500, 510, 120));
+        delhi.addBranch("BHMS", new Branch(450, 456, 120));
+        map.put(311, delhi);
+
+        // AIIMS Jodhpur
+        Medical jodhpur = new Medical("AIIMS Jodhpur", "9000000012", "MBBS", "Rajasthan", CollegeType.AIIMS);
+        jodhpur.addBranch("MBBS", new Branch(690, 700, 125));
+        jodhpur.addBranch("BAMS", new Branch(490, 500, 110));
+        jodhpur.addBranch("BHMS", new Branch(440, 450, 110));
+        map.put(312, jodhpur);
+
+        // AIIMS Bhubaneswar
+        Medical bbsr = new Medical("AIIMS Bhubaneswar", "9000000013", "MBBS", "Odisha", CollegeType.AIIMS);
+        bbsr.addBranch("MBBS", new Branch(688, 695, 125));
+        bbsr.addBranch("BAMS", new Branch(485, 495, 110));
+        bbsr.addBranch("BHMS", new Branch(435, 445, 110));
+        map.put(313, bbsr);
+
+        // AIIMS Bhopal
+        Medical bhopal = new Medical("AIIMS Bhopal", "9000000014", "MBBS", "Madhya Pradesh", CollegeType.AIIMS);
+        bhopal.addBranch("MBBS", new Branch(685, 693, 125));
+        bhopal.addBranch("BAMS", new Branch(480, 490, 110));
+        bhopal.addBranch("BHMS", new Branch(430, 440, 110));
+        map.put(314, bhopal);
+
+        // AIIMS Rishikesh
+        Medical rishikesh = new Medical("AIIMS Rishikesh", "9000000015", "MBBS", "Uttarakhand", CollegeType.AIIMS);
+        rishikesh.addBranch("MBBS", new Branch(682, 690, 125));
+        rishikesh.addBranch("BAMS", new Branch(475, 485, 110));
+        rishikesh.addBranch("BHMS", new Branch(425, 435, 110));
+        map.put(315, rishikesh);
+
+        // AIIMS Patna
+        Medical patna = new Medical("AIIMS Patna", "9000000016", "MBBS", "Bihar", CollegeType.AIIMS);
+        patna.addBranch("MBBS", new Branch(678, 685, 125));
+        patna.addBranch("BAMS", new Branch(470, 480, 110));
+        patna.addBranch("BHMS", new Branch(420, 430, 110));
+        map.put(316, patna);
+
+        // AIIMS Raipur
+        Medical raipur = new Medical("AIIMS Raipur", "9000000017", "MBBS", "Chhattisgarh", CollegeType.AIIMS);
+        raipur.addBranch("MBBS", new Branch(675, 682, 125));
+        raipur.addBranch("BAMS", new Branch(465, 475, 110));
+        raipur.addBranch("BHMS", new Branch(415, 425, 110));
+        map.put(317, raipur);
+
+        // AIIMS Nagpur
+        Medical nagpur = new Medical("AIIMS Nagpur", "9000000018", "MBBS", "Maharashtra", CollegeType.AIIMS);
+        nagpur.addBranch("MBBS", new Branch(670, 678, 120));
+        nagpur.addBranch("BAMS", new Branch(460, 470, 105));
+        nagpur.addBranch("BHMS", new Branch(410, 420, 105));
+        map.put(318, nagpur);
+
+        // AIIMS Bathinda
+        Medical bathinda = new Medical("AIIMS Bathinda", "9000000019", "MBBS", "Punjab", CollegeType.AIIMS);
+        bathinda.addBranch("MBBS", new Branch(665, 672, 120));
+        bathinda.addBranch("BAMS", new Branch(455, 465, 100));
+        bathinda.addBranch("BHMS", new Branch(405, 415, 100));
+        map.put(319, bathinda);
+
+        // AIIMS Kalyani
+        Medical kalyani = new Medical("AIIMS Kalyani", "9000000020", "MBBS", "West Bengal", CollegeType.AIIMS);
+        kalyani.addBranch("MBBS", new Branch(660, 668, 120));
+        kalyani.addBranch("BAMS", new Branch(450, 460, 100));
+        kalyani.addBranch("BHMS", new Branch(400, 410, 100));
+        map.put(320, kalyani);
+
+        // ========= NATIONAL TOP MEDICAL COLLEGES =========
+
+        // 318 CMC Vellore
+        Medical cmc = new Medical("Christian Medical College Vellore", "9000000018", "MBBS", "Vellore", CollegeType.OtherMedical);
+        cmc.addBranch("MBBS", new Branch(670, 685, 150));
+        cmc.addBranch("BAMS", new Branch(470, 490, 80));
+        cmc.addBranch("BHMS", new Branch(420, 440, 80));
+        map.put(318, cmc);
+
+        // 319 KGMU Lucknow
+        Medical kgmu = new Medical("King George's Medical University", "9000000019", "MBBS", "Lucknow", CollegeType.OtherMedical);
+        kgmu.addBranch("MBBS", new Branch(660, 675, 200));
+        kgmu.addBranch("BAMS", new Branch(460, 480, 100));
+        kgmu.addBranch("BHMS", new Branch(410, 430, 100));
+        map.put(319, kgmu);
+
+        // 320 BHU – IMS Varanasi
+        Medical bhu = new Medical("Banaras Hindu University – Institute of Medical Sciences", "9000000020", "MBBS", "Varanasi", CollegeType.OtherMedical);
+        bhu.addBranch("MBBS", new Branch(665, 680, 150));
+        bhu.addBranch("BAMS", new Branch(465, 485, 90));
+        bhu.addBranch("BHMS", new Branch(415, 435, 90));
+        map.put(320, bhu);
+
+        // 321 Maulana Azad Medical College
+        Medical mamc = new Medical("Maulana Azad Medical College", "9000000021", "MBBS", "New Delhi", CollegeType.OtherMedical);
+        mamc.addBranch("MBBS", new Branch(675, 690, 250));
+        mamc.addBranch("BAMS", new Branch(475, 495, 100));
+        mamc.addBranch("BHMS", new Branch(425, 445, 100));
+        map.put(321, mamc);
+
+        // 322 Lady Hardinge Medical College
+        Medical lhm = new Medical("Lady Hardinge Medical College", "9000000022", "MBBS", "New Delhi", CollegeType.OtherMedical);
+        lhm.addBranch("MBBS", new Branch(660, 675, 200));
+        lhm.addBranch("BAMS", new Branch(460, 480, 100));
+        lhm.addBranch("BHMS", new Branch(410, 430, 100));
+        map.put(322, lhm);
+
+        // 323 AFMC Pune
+        Medical afmc2 = new Medical("Armed Forces Medical College (AFMC) Pune", "9000000023", "MBBS", "Pune", CollegeType.OtherMedical);
+        afmc2.addBranch("MBBS", new Branch(680, 695, 150));
+        afmc2.addBranch("BAMS", new Branch(480, 500, 80));
+        afmc2.addBranch("BHMS", new Branch(430, 450, 80));
+        map.put(323, afmc2);
+
+        // 324 St. John's Medical College
+        Medical stjohn = new Medical("St. John's Medical College", "9000000024", "MBBS", "Bangalore", CollegeType.OtherMedical);
+        stjohn.addBranch("MBBS", new Branch(650, 670, 150));
+        stjohn.addBranch("BAMS", new Branch(450, 470, 90));
+        stjohn.addBranch("BHMS", new Branch(400, 420, 90));
+        map.put(324, stjohn);
+
+        // 325 Grant Medical College & Sir J.J.
+        Medical grantjj = new Medical("Grant Medical College & Sir J.J. Group of Hospitals", "9000000025", "MBBS", "Mumbai", CollegeType.OtherMedical);
+        grantjj.addBranch("MBBS", new Branch(655, 670, 200));
+        grantjj.addBranch("BAMS", new Branch(455, 475, 90));
+        grantjj.addBranch("BHMS", new Branch(405, 425, 90));
+        map.put(325, grantjj);
+
+        // 326 Amrita School of Medicine
+        Medical amrita = new Medical("Amrita School of Medicine, Kochi", "9000000026", "MBBS", "Kochi", CollegeType.OtherMedical);
+        amrita.addBranch("MBBS", new Branch(640, 660, 150));
+        amrita.addBranch("BAMS", new Branch(440, 460, 80));
+        amrita.addBranch("BHMS", new Branch(390, 410, 80));
+        map.put(326, amrita);
+
+        // 327 Manipal College of Medical Sciences
+        Medical manipal = new Medical("Manipal College of Medical Sciences", "9000000027", "MBBS", "Manipal", CollegeType.OtherMedical);
+        manipal.addBranch("MBBS", new Branch(630, 650, 200));
+        manipal.addBranch("BAMS", new Branch(430, 450, 100));
+        manipal.addBranch("BHMS", new Branch(380, 400, 100));
+        map.put(327, manipal);
+
+        // 328 JIPMER Puducherry
+        Medical jipmer = new Medical("JIPMER Puducherry", "9000000028", "MBBS", "Puducherry", CollegeType.OtherMedical);
+        jipmer.addBranch("MBBS", new Branch(680, 695, 200));
+        jipmer.addBranch("BAMS", new Branch(480, 500, 100));
+        jipmer.addBranch("BHMS", new Branch(430, 450, 100));
+        map.put(328, jipmer);
+
+        // 329 KGMU Gorakhpur Campus
+        Medical kgmugkp = new Medical("King George's Medical University – Gorakhpur Campus", "9000000029", "MBBS", "Gorakhpur", CollegeType.OtherMedical);
+        kgmugkp.addBranch("MBBS", new Branch(620, 640, 150));
+        kgmugkp.addBranch("BAMS", new Branch(420, 440, 80));
+        kgmugkp.addBranch("BHMS", new Branch(370, 390, 80));
+        map.put(329, kgmugkp);
+
+        // 330 IMS BHU (duplicate structured entry)
+        Medical bhu2 = new Medical("Institute of Medical Sciences, Banaras Hindu University", "9000000030", "MBBS", "Varanasi", CollegeType.OtherMedical);
+        bhu2.addBranch("MBBS", new Branch(665, 680, 150));
+        bhu2.addBranch("BAMS", new Branch(465, 485, 90));
+        bhu2.addBranch("BHMS", new Branch(415, 435, 90));
+        map.put(330, bhu2);
 
         return map;
     }
@@ -583,17 +816,68 @@ public class CollegesDataBase{
 
         HashMap<Integer, Pharmacy> map = new HashMap<>();
 
-        map.put(401, new Pharmacy("Poona College of Pharmacy", "8111111111", "BPharm", "Pune", CollegeType.OtherPharmacy));
-        map.put(402, new Pharmacy("Bombay College of Pharmacy", "8222222222", "BPharm", "Mumbai", CollegeType.OtherPharmacy));
-        map.put(403, new Pharmacy("DY Patil Pharmacy", "8333333333", "BPharm", "Pune", CollegeType.OtherPharmacy));
-        map.put(404, new Pharmacy("Sinhgad Pharmacy", "8444444444", "BPharm", "Pune", CollegeType.OtherPharmacy));
-        map.put(405, new Pharmacy("KLE Pharmacy", "8555555555", "BPharm", "Belgaum", CollegeType.OtherPharmacy));
-        map.put(406, new Pharmacy("MIT Pharmacy", "8666666666", "BPharm", "Pune", CollegeType.OtherPharmacy));
-        map.put(407, new Pharmacy("SVKM Pharmacy", "8777777777", "BPharm", "Mumbai", CollegeType.OtherPharmacy));
-        map.put(408, new Pharmacy("Bharati Vidyapeeth Pharmacy", "8888888888", "BPharm", "Pune", CollegeType.OtherPharmacy));
-        map.put(409, new Pharmacy("PES Pharmacy", "8999999999", "BPharm", "Aurangabad", CollegeType.OtherPharmacy));
-        map.put(410, new Pharmacy("RCPIPER", "8111222233", "BPharm", "Shirpur", CollegeType.OtherPharmacy));
+        // ========= PHARMACY COLLEGES =========
 
+        // 401 Poona College of Pharmacy
+        Pharmacy poona = new Pharmacy("Poona College of Pharmacy", "8111111111", "BPharm", "Pune", CollegeType.OtherPharmacy);
+        poona.addBranch("BPharm", new Branch(120, 150, 120));
+        poona.addBranch("DPharm", new Branch(90, 120, 60));
+        map.put(401, poona);
+
+        // 402 Bombay College of Pharmacy
+        Pharmacy bombay = new Pharmacy("Bombay College of Pharmacy", "8222222222", "BPharm", "Mumbai", CollegeType.OtherPharmacy);
+        bombay.addBranch("BPharm", new Branch(115, 145, 100));
+        bombay.addBranch("DPharm", new Branch(85, 115, 60));
+        map.put(402, bombay);
+
+        // 403 DY Patil Pharmacy
+        Pharmacy dypPharma = new Pharmacy("DY Patil Pharmacy", "8333333333", "BPharm", "Pune", CollegeType.OtherPharmacy);
+        dypPharma.addBranch("BPharm", new Branch(110, 140, 150));
+        dypPharma.addBranch("DPharm", new Branch(80, 110, 60));
+        map.put(403, dypPharma);
+
+        // 404 Sinhgad Pharmacy
+        Pharmacy sinhgad = new Pharmacy("Sinhgad Pharmacy", "8444444444", "BPharm", "Pune", CollegeType.OtherPharmacy);
+        sinhgad.addBranch("BPharm", new Branch(105, 135, 120));
+        sinhgad.addBranch("DPharm", new Branch(75, 105, 60));
+        map.put(404, sinhgad);
+
+        // 405 KLE Pharmacy
+        Pharmacy kle = new Pharmacy("KLE Pharmacy", "8555555555", "BPharm", "Belgaum", CollegeType.OtherPharmacy);
+        kle.addBranch("BPharm", new Branch(110, 140, 100));
+        kle.addBranch("DPharm", new Branch(80, 110, 60));
+        map.put(405, kle);
+
+        // 406 MIT Pharmacy
+        Pharmacy mit = new Pharmacy("MIT Pharmacy", "8666666666", "BPharm", "Pune", CollegeType.OtherPharmacy);
+        mit.addBranch("BPharm", new Branch(100, 130, 100));
+        mit.addBranch("DPharm", new Branch(70, 100, 60));
+        map.put(406, mit);
+
+        // 407 SVKM Pharmacy
+        Pharmacy svkm = new Pharmacy("SVKM Pharmacy", "8777777777", "BPharm", "Mumbai", CollegeType.OtherPharmacy);
+        svkm.addBranch("BPharm", new Branch(115, 145, 120));
+        svkm.addBranch("DPharm", new Branch(85, 115, 60));
+        map.put(407, svkm);
+
+        // 408 Bharati Vidyapeeth Pharmacy
+        Pharmacy bv = new Pharmacy("Bharati Vidyapeeth Pharmacy", "8888888888", "BPharm", "Pune", CollegeType.OtherPharmacy);
+        bv.addBranch("BPharm", new Branch(105, 135, 120));
+        bv.addBranch("DPharm", new Branch(75, 105, 60));
+        map.put(408, bv);
+
+        // 409 PES Pharmacy
+        Pharmacy pes = new Pharmacy("PES Pharmacy", "8999999999", "BPharm", "Aurangabad", CollegeType.OtherPharmacy);
+        pes.addBranch("BPharm", new Branch(95, 125, 100));
+        pes.addBranch("DPharm", new Branch(65, 95, 60));
+        map.put(409, pes);
+
+        // 410 RCPIPER
+        Pharmacy rcpiper = new Pharmacy("RCPIPER", "8111222233", "BPharm", "Shirpur", CollegeType.OtherPharmacy);
+        rcpiper.addBranch("BPharm", new Branch(115, 150, 120));
+        rcpiper.addBranch("DPharm", new Branch(85, 115, 60));
+        map.put(410, rcpiper);
+        
         return map;
     }
 

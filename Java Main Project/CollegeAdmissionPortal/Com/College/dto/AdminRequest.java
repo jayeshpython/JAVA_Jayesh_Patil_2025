@@ -8,36 +8,45 @@ public class AdminRequest {
     private Admin admin = new Admin();
 
     public boolean ValidateAdminLogin() {
-        System.out.print("Enter admin name:");
-        String adminName = sc.nextLine().trim();
 
-        if(!validateName(adminName)){
-            return false;
-        }
+        int attempts = 0;
 
-        System.out.print("Enter password:");
-        String adminPass = sc.nextLine().trim();
+        while(attempts <= 3){
 
-        ArrayList<AdminInformation> adminlist = admin.getAdminList();
-        for (AdminInformation a : adminlist) {
-            if ((a.getAdminName()).equals(adminName) && a.getAdminPassword().equals(adminPass)) {
-                System.out.println("Admin Login Successfull");
-                return true;
+            System.out.print("\n\tEnter Admin Email id:");
+            String adminEmailId = sc.nextLine().trim();
+
+            while(!validateEmail(adminEmailId)){
+                System.out.print("\n\tEnter Admin Email Id: ");
+                adminEmailId = sc.nextLine().trim();
+            }
+
+            System.out.print("\n\tEnter password:");
+            String adminPass = sc.nextLine().trim();
+
+            ArrayList<AdminInformation> adminlist = admin.getAdminList();
+            for (AdminInformation a : adminlist) {
+                if ((a.getAdminEmail()).equals(adminEmailId) && a.getAdminPassword().equals(adminPass)) {
+                    return true;
+                }
+            }
+            attempts ++;
+            if(attempts <= 3){
+                System.out.println("\tAttempts left: " + (4 - attempts));
+
             }
         }
+        System.out.println("\n\tYou have exceeded maximum login attempts (3). Access Denied ");
         return false;
 
     }
 
-    public boolean validateName(String studentName) {
-        if (!studentName.matches("[a-zA-Z ]+")) {
-            System.out.println("Name cannot contain symbols");
+    public boolean validateEmail(String emailId) {
+        if (!emailId.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
+            System.out.println("\tPlease entered correct Email format..!");
+            System.out.println("\tPlease again enter Email id.");
             return false;
         }
         return true;
     }
-
-    
-
-
 }

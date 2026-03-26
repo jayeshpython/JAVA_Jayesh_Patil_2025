@@ -5,10 +5,22 @@ import java.util.ArrayList;
 
 public class Admin {
     private ArrayList<AdminInformation> arr;
+    private boolean declareResult = false;
+
+    //Student object creation
+    private Student stud;
     
     public Admin(){
         arr=new ArrayList<>(3);
         loadAdmins();
+    }
+
+    public boolean getResultStatus(){
+        return declareResult;
+    }
+
+    public void setResultStatus(){
+        declareResult = false;
     }
 
     public void loadAdmins(){
@@ -19,6 +31,11 @@ public class Admin {
 
     public ArrayList<AdminInformation> getAdminList(){
         return arr;
+    }
+
+    //Declaring result
+    public College declareStudentResult(Student stud){
+
     }
 
 }

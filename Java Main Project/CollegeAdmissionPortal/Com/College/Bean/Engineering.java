@@ -25,7 +25,12 @@ public class Engineering extends College{
         return branchWiseCutOffsForEngineering.get(branchName);
     }
 
+    public void setBranchWiseCutOffsForEngineering(HashMap<String, Branch> map){
+        this.branchWiseCutOffsForEngineering = map;
+    }
+
     //display all branches
+    @Override
     public void displayAllBranches() {
         System.out.println("\nBranches in " + getCollegeName() + ":");
 
@@ -41,10 +46,19 @@ public class Engineering extends College{
         }
     }
 
+    @Override
+    public void branchesInThatParticularCollege(){
+        System.out.println("\nBranches in " + getCollegeName() + ":");
+
+        for(String branchName : branchWiseCutOffsForEngineering.keySet()){
+            System.out.println(branchName);
+            System.out.println("----------------------");
+        }
+    }
 
     @Override
     public String toString() {
-        return super.toString() + "\nBranches: " + branchWiseCutOffsForEngineering;
+        return super.toString();
     }
 
 

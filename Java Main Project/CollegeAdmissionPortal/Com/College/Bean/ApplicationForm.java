@@ -22,6 +22,13 @@ public class ApplicationForm {
         return status;
     }
 
+    public College getCollege(){
+        return college;
+    }
+
+    public Branch getBranch(){
+        return branch;
+    }
 
     @Override
     public String toString(){

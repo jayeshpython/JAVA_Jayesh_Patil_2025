@@ -20,6 +20,11 @@ public class Medical extends College{
         return branchWiseCutOffsForMedical;
     }
 
+    public void setBranchWiseCutOffsForMedical(HashMap<String, Branch> map){
+        this.branchWiseCutOffsForMedical = map;
+    }
+
+
     public Branch getBranch(String branchName){
         return branchWiseCutOffsForMedical.get(branchName);
     }
@@ -38,11 +43,20 @@ public class Medical extends College{
             System.out.println("Details: " + entry.getValue());
             System.out.println("----------------------");
         }
-}
+    }
 
+    @Override
+    public void branchesInThatParticularCollege(){
+        System.out.println("\nBranches in " + getCollegeName() + ":");
+
+        for(String branchName : branchWiseCutOffsForMedical.keySet()){
+            System.out.println(branchName);
+            System.out.println("----------------------");
+        }
+    } 
 
     @Override
     public String toString() {
-        return super.toString() + "\nMedical Branches: " + branchWiseCutOffsForMedical;
+        return super.toString();
     }
 }

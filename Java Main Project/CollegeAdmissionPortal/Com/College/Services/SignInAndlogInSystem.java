@@ -7,6 +7,8 @@ public class SignInAndlogInSystem {
     private StudentRequest studentRequest = new StudentRequest();
     private StudentMain std = new StudentMain();
 
+    private AdminRequest adminRequest = new AdminRequest();
+    private Admin adm = new Admin();
 
     public SignInAndlogInSystem() {}
 
@@ -22,4 +24,7 @@ public class SignInAndlogInSystem {
        return studentRequest.ValidatestudentLogin();
     }
 
+    public boolean LogInForAdmin(){
+        return adminRequest.ValidateAdminLogin();
+    }
 }

@@ -13,6 +13,7 @@ public class AdminInformation {
         this.adminPassword=adminPassword;
     }
 
+    //Setters for Admin attributes
     public void setAdminName(String name){
         this.adminName=name;
     }
@@ -29,6 +30,7 @@ public class AdminInformation {
         this.adminPassword=password;
     }
 
+    //Getter for Admin attributes
     public String getAdminName(){
         return this.adminName;
     }

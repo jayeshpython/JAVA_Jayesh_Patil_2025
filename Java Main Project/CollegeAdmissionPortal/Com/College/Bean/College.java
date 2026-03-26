@@ -37,13 +37,13 @@ public abstract class College{
 
     @Override
     public String toString(){
-        return "College Name: " + collegeName + "\t| College Location: " + collegeLocation + "\t| College Email id: " + collegeEmailId + "\t| College contact number: " + collegeContactNumber;
+        return "\nCollege Name: " + collegeName + "\t| College Location: " + collegeLocation + "\t| College Email id: " + collegeEmailId + "\t| College contact number: " + collegeContactNumber;
     }
 
     abstract public void displayAllBranches();
 
     abstract public Branch getBranch(String branchName);
 
-    
+    abstract public void branchesInThatParticularCollege();
 
 }

@@ -1,5 +1,6 @@
 package Services;
 import Bean.*;
+import java.util.ArrayList;
 
 public interface ParticularTypeOfCollege {
     
@@ -39,5 +40,15 @@ public interface ParticularTypeOfCollege {
     public void removeOtherEngineeringColleges(Engineering e);
     public void removeAIIMSColleges(Medical m);
     public void removeOtherMedicalColleges(Medical m);
+    
+    //Colleges code
+    public ArrayList<Integer> getIITCode();
+    public ArrayList<Integer> getNITCode();
+    public ArrayList<Integer> getBITCode();
+    public ArrayList<Integer> getIISERCode();
+    public ArrayList<Integer> getOtherEngineeringCollegesCode();
+    public ArrayList<Integer> getAIIMSCode();
+    public ArrayList<Integer> getOtherMedicalCollegesCode();
+    public ArrayList<Integer> getPharmacyCode();
 }
 

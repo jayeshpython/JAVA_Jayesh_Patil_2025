@@ -13,6 +13,10 @@ public class Pharmacy extends College{
     public void addBranch(String BranchName, Branch branch){
         branchWiseCutOffsForPharmacy.put(BranchName, branch);
     }
+    public void setBranchWiseCutOffsForPharmacy(HashMap<String, Branch> map){
+        this.branchWiseCutOffsForPharmacy = map;
+    }
+
 
     //get all branches in Pharmacy
     public HashMap<String, Branch> getAllBranches() {
@@ -37,11 +41,20 @@ public class Pharmacy extends College{
             System.out.println("Details: " + entry.getValue());
             System.out.println("----------------------");
         }
-}
+    }
 
+    @Override
+    public void branchesInThatParticularCollege(){
+        System.out.println("\nBranches in " + getCollegeName() + ":");
+
+        for(String branchName : branchWiseCutOffsForPharmacy.keySet()){
+            System.out.println(branchName);
+            System.out.println("----------------------");
+        }
+    }
 
     @Override
     public String toString() {
-        return super.toString() + "\nMedical Branches: " + branchWiseCutOffsForPharmacy;
+        return super.toString();
     }
 }

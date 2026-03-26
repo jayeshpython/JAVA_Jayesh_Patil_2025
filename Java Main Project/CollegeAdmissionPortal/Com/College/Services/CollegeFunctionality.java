@@ -30,6 +30,9 @@ public interface  CollegeFunctionality {
     // ------- Search College ------
     public void searchCollegeByLocation(String location);
     public College searchCollegeByName(String collegeName);
+
+    public void displayListOfAddedColleges();
+    public void displayListOfRemovedColleges();
 }
 
 
