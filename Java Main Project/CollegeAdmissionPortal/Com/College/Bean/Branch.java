@@ -40,4 +40,8 @@ public class Branch {
         this.availableSeats = availableSeats;
     }
 
+    @Override
+    public String toString() {
+        return "Cutt Off: " + lastYearCutOff + " | Available seats: " + availableSeats;
+    }
 }

@@ -41,7 +41,7 @@ public class Engineering extends College{
 
         for (Map.Entry<String, Branch> entry : branchWiseCutOffsForEngineering.entrySet()) {
             System.out.println("Branch: " + entry.getKey());
-            System.out.println("Details: " + entry.getValue());
+            System.out.println("Cut Off Info: " + entry.getValue());
             System.out.println("----------------------");
         }
     }
